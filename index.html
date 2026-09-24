@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pleasant House | 나라 아스카무라 체험형 프라이빗 고민가 게스트하우스 & 살롱</title>
+  <meta name="description" content="나라현 아스카무라(明日香村) 1일 1팀 한정 독채 고민가 스테이. 갓 구운 수제 베이커리 조식, 힐링 E-Bike 프라이빗 가이드 투어, 그리고 따뜻한 문화 교류 살롱 Pleasant House에 오신 것을 환영합니다.">
+  <meta name="keywords" content="Pleasant House, 플레전트하우스, 나라 게스트하우스, 아스카무라 숙소, 일본 고민가 숙박, E-Bike 투어, 일본 시골 여행, 나라 여행, 1일1팀숙소">
+  
+  <!-- Open Graph / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pleasant House | 나라 아스카무라 체험형 고민가 살롱 & 스테이">
+  <meta property="og:description" content="천년의 역사를 품은 야외 박물관 아스카무라에서 보내는 특별한 하루. 150m² 프라이빗 고민가 독채, 수제 베이커리, 전일정 E-Bike 투어.">
+  <meta property="og:image" content="assets/pleasant_house_exterior.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Serif+KR:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container announcement-inner">
+      <span class="badge" data-i18n="announcement_badge">1日 1組 限定</span>
+      <span class="announcement-text" data-i18n="announcement_text">하루 오직 한 팀만을 위한 프라이빗 독채 고민가 & 힐링 E-Bike 투어 패키지 예약 접수 중</span>
+      <a href="#booking" class="announcement-link" data-i18n="announcement_cta">예약 문의하기 &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo">
+        <span class="logo-sub">ASUKA · NARA</span>
+        <span class="logo-main">Pleasant House</span>
+        <span class="logo-kanji">サロン・プレザント</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">소개</a></li>
+          <li><a href="#pillars" class="nav-link" data-i18n="nav_pillars">4대 시너지</a></li>
+          <li><a href="#stay" class="nav-link" data-i18n="nav_stay">객실 & 시설</a></li>
+          <li><a href="#tour" class="nav-link" data-i18n="nav_tour">E-Bike 투어</a></li>
+          <li><a href="#pricing" class="nav-link" data-i18n="nav_pricing">패키지 & 요금</a></li>
+          <li><a href="#location" class="nav-link" data-i18n="nav_location">오시는 길</a></li>
+          <li><a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switch" id="langSwitch">
+          <button type="button" class="lang-btn active" data-lang="ko">KO</button>
+          <button type="button" class="lang-btn" data-lang="ja">JA</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="#booking" class="btn btn-primary btn-sm header-cta" data-i18n="cta_book">예약 문의</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Pleasant House</span>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="#about" class="drawer-link" data-i18n="nav_about">소개</a></li>
+      <li><a href="#pillars" class="drawer-link" data-i18n="nav_pillars">4대 시너지</a></li>
+      <li><a href="#stay" class="drawer-link" data-i18n="nav_stay">객실 & 시설</a></li>
+      <li><a href="#tour" class="drawer-link" data-i18n="nav_tour">E-Bike 투어</a></li>
+      <li><a href="#pricing" class="drawer-link" data-i18n="nav_pricing">패키지 & 요금</a></li>
+      <li><a href="#location" class="drawer-link" data-i18n="nav_location">오시는 길</a></li>
+      <li><a href="#faq" class="drawer-link" data-i18n="nav_faq">FAQ</a></li>
+    </ul>
+    <div class="drawer-cta">
+      <a href="#booking" class="btn btn-primary btn-block" data-i18n="cta_book">예약 문의 신청</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-bg-image" style="background-image: url('assets/pleasant_house_exterior.jpg');"></div>
+      
+      <div class="container hero-content">
+        <div class="hero-tagline-wrapper">
+          <span class="hero-kicker" data-i18n="hero_kicker">ASUKA VILLAGE, NARA · 1 DAY 1 GROUP EXCLUSIVE</span>
+          <h1 class="hero-title" data-i18n="hero_title">
+            천년의 숨결을 품은 아스카의 들판,<br>
+            <span class="text-gold">단 한 팀만을 위한</span> 따뜻한 쉼의 집
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero_desc">
+            한일 부부의 인생 2막이 담긴 150m² 프라이빗 고민가 독채 스테이.<br>
+            매일 아침 갓 구운 천연효모 빵과 조식, 아스카의 숨은 비경을 누비는 E-Bike 가이드 투어, 그리고 사람의 온기가 머무는 살롱.
+          </p>
+        </div>
+
+        <!-- Quick Feature Cards -->
+        <div class="hero-features">
+          <div class="feature-chip">
+            <span class="chip-icon">🏯</span>
+            <div class="chip-text">
+              <strong data-i18n="feat1_title">150m² 고민가 독채</strong>
+              <small data-i18n="feat1_sub">1일 1팀 한정 프라이빗</small>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">🥐</span>
+            <div class="chip-text">
+              <strong data-i18n="feat2_title">수제 베이커리 조식</strong>
+              <small data-i18n="feat2_sub">갓 구운 천연발효 빵 & 커피</small>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">🚲</span>
+            <div class="chip-text">
+              <strong data-i18n="feat3_title">E-Bike 가이드 투어</strong>
+              <small data-i18n="feat3_sub">아스카 문화유산 전일정 동행</small>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">📷</span>
+            <div class="chip-text">
+              <strong data-i18n="feat4_title">감성 스냅 사진 증정</strong>
+              <small data-i18n="feat4_sub">여행의 영화 같은 순간 기록</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Quick Booking Widget -->
+        <div class="hero-booking-bar">
+          <form id="heroBookingForm" class="booking-bar-form" onsubmit="event.preventDefault(); goToBooking();">
+            <div class="form-group">
+              <label><span class="icon">📅</span> <span data-i18n="label_checkin">체크인 희망일</span></label>
+              <input type="date" id="heroCheckin" required>
+            </div>
+            <div class="form-group">
+              <label><span class="icon">👥</span> <span data-i18n="label_guests">인원</span></label>
+              <select id="heroGuests">
+                <option value="2" data-i18n="opt_couple">커플 / 2인 (권장)</option>
+                <option value="1" data-i18n="opt_solo">1인 솔로 리트리트</option>
+                <option value="3" data-i18n="opt_3">성인 3인 (패밀리)</option>
+                <option value="4" data-i18n="opt_4">성인 4인 (소규모 그룹)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label><span class="icon">✨</span> <span data-i18n="label_package">선호 패키지</span></label>
+              <select id="heroPackage">
+                <option value="signature" data-i18n="pkg_signature_opt">시그니처 익스피리언스 (숙박+조식+투어+스냅)</option>
+                <option value="retreat" data-i18n="pkg_retreat_opt">심플 스테이 리트리트 (숙박+수제조식)</option>
+                <option value="anniversary" data-i18n="pkg_anniv_opt">애니버서리 스페셜 (기념일 커스텀)</option>
+              </select>
+            </div>
+            <div class="form-group form-submit">
+              <button type="submit" class="btn btn-primary btn-block">
+                <span data-i18n="btn_check_plan">실시간 견적 & 상담</span> &rarr;
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <a href="#about" aria-label="스크롤 아래로">
+          <span class="mouse-icon"></span>
+          <span class="scroll-text">EXPLORE</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section: Brand Story & Philosophy -->
+    <section class="section section-story" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="story_kicker">PHILOSOPHY & STORY</span>
+          <h2 class="section-title" data-i18n="story_title">인생의 두 번째 막, 마음을 나누는 쉼터</h2>
+          <div class="divider"></div>
+          <p class="section-intro" data-i18n="story_lead">
+            Pleasant House는 단순한 숙박 시설이 아닙니다. 도시를 떠나 천년 고도 나라의 아스카무라에 둥지를 튼 한일 부부가 
+            여행자들과 삶의 따뜻한 여유를 나누기 위해 정성껏 빚어낸 복합 문화 힐링 공간입니다.
+          </p>
+        </div>
+
+        <div class="story-grid">
+          <div class="story-card card-glass">
+            <div class="story-icon">🌿</div>
+            <h3 class="story-card-title" data-i18n="story_c1_title">삶의 질과 환대를 최우선으로</h3>
+            <p class="story-card-desc" data-i18n="story_c1_desc">
+              최대 이윤을 추구하기보다는 여유 있는 라이프스타일과 방문객 한 분 한 분과의 진솔한 교감을 지향합니다. 하루 단 1팀에게만 온전한 공간과 진심 어린 시간을 봉헌합니다.
+            </p>
+          </div>
+
+          <div class="story-card card-glass">
+            <div class="story-icon">🏛️</div>
+            <h3 class="story-card-title" data-i18n="story_c2_title">지붕 없는 야외 박물관, 아스카무라</h3>
+            <p class="story-card-desc" data-i18n="story_c2_desc">
+              고대 아스카 시대의 숨결이 깃든 고분과 수수께끼 석조물, 계단식 다랑이논이 그림처럼 펼쳐진 곳. 쫓기듯 스쳐 지나가는 관광이 아닌, 머물며 사색하는 깊이 있는 여행을 선물합니다.
+            </p>
+          </div>
+
+          <div class="story-card card-glass">
+            <div class="story-icon">🤝</div>
+            <h3 class="story-card-title" data-i18n="story_c3_title">한일 문화의 따스한 가교</h3>
+            <p class="story-card-desc" data-i18n="story_c3_desc">
+              한국인 남편과 일본인 아내가 함께 운영하며, 언어의 장벽 없이 가장 섬세하고 친절한 로컬 안내와 고향 집 같은 편안한 케어를 경험하실 수 있습니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- Host Quote Box -->
+        <div class="host-quote-banner">
+          <div class="quote-content">
+            <span class="quote-mark">“</span>
+            <p class="quote-text" data-i18n="host_quote_text">
+              바쁜 일상에서 벗어나 사랑하는 이와 조용히 눈을 맞추고, 향긋한 빵 냄새와 함께 아침을 맞이하며, 바람결 따라 자전거를 달리는 자유. 
+              저희가 아스카에서 찾은 이 소박하고도 깊은 행복을 여러분과 나누고 싶습니다.
+            </p>
+            <div class="quote-author">
+              <span class="author-name" data-i18n="host_name">안(Ahn) 부부 올림</span>
+              <span class="author-title" data-i18n="host_role">Pleasant House 호스트 & 가이드</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: 4 Core Pillars (4대 사업 시너지) -->
+    <section class="section section-pillars bg-cream" id="pillars">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="pillars_kicker">FOUR SYNERGIES</span>
+          <h2 class="section-title" data-i18n="pillars_title">Pleasant House를 이루는 4가지 감동</h2>
+          <div class="divider"></div>
+          <p class="section-intro" data-i18n="pillars_lead">
+            숙박, 수제 베이커리, E-Bike 가이드 투어, 그리고 살롱 카페의 결합 — 여행의 모든 순간이 하나의 아름다운 이야기로 이어집니다.
+          </p>
+        </div>
+
+        <!-- Pillar 1: Stay -->
+        <div class="pillar-row">
+          <div class="pillar-image-wrap">
+            <img src="assets/pleasant_house_room.jpg" alt="150m² 프라이빗 고민가 독채 스테이" class="pillar-img rounded-shadow">
+            <span class="pillar-badge" data-i18n="p1_badge">PILLAR 01 · 宿泊</span>
+          </div>
+          <div class="pillar-text-wrap">
+            <span class="step-num">01</span>
+            <h3 class="pillar-heading" data-i18n="p1_heading">150m² 고풍스러운 전통 고민가의 온전한 사유</h3>
+            <p class="pillar-description" data-i18n="p1_desc">
+              나라 전통 가옥의 웅장한 목조 대들보와 다다미의 포근함, 그리고 모던한 럭셔리 설비가 조화를 이룹니다. 다른 투숙객 없이 정원과 툇마루(엔가와), 히노끼 감성의 욕조까지 오직 귀하만의 프라이빗한 휴식을 위해 준비됩니다.
+            </p>
+            <ul class="pillar-checklist">
+              <li data-i18n="p1_pt1">✓ 1일 1팀 전용(최대 4인) 완전한 프라이버시 보장</li>
+              <li data-i18n="p1_pt2">✓ 최고급 프리미엄 킹 베딩 & 포근한 온돌/다다미 룸</li>
+              <li data-i18n="p1_pt3">✓ 일본식 사계절 정원이 내려다보이는 툇마루 다도 공간</li>
+            </ul>
+            <a href="#stay" class="pillar-link" data-i18n="link_view_room">객실 상세 보기 &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Bakery -->
+        <div class="pillar-row reverse">
+          <div class="pillar-image-wrap">
+            <img src="assets/pleasant_house_bakery.jpg" alt="매일 아침 갓 구운 천연효모 수제 베이커리 & 조식" class="pillar-img rounded-shadow">
+            <span class="pillar-badge" data-i18n="p2_badge">PILLAR 02 · 朝食・製パン</span>
+          </div>
+          <div class="pillar-text-wrap">
+            <span class="step-num">02</span>
+            <h3 class="pillar-heading" data-i18n="p2_heading">아침을 깨우는 천연 효모 수제 빵 & 아스카 로컬 조식</h3>
+            <p class="pillar-description" data-i18n="p2_desc">
+              매일 아침 오븐에서 바로 구워져 나오는 천연 발효 사워도우와 바삭한 크루아상. 아스카의 깨끗한 토양에서 자란 제철 채소, 신선한 달걀, 수제 잼, 그리고 정성껏 내린 핸드드립 커피가 따뜻한 아침을 선물합니다.
+            </p>
+            <ul class="pillar-checklist">
+              <li data-i18n="p2_pt1">✓ 당일 아침 직접 구워내는 프랑스산 버터 & 유기농 밀가루 빵</li>
+              <li data-i18n="p2_pt2">✓ 아스카 특산 딸기(아스카루비), 무화과, 로컬 채소 샐러드</li>
+              <li data-i18n="p2_pt3">✓ 우천 시 호스트와 함께하는 프라이빗 제빵 클래스 전환 가능</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pillar 3: E-Bike -->
+        <div class="pillar-row">
+          <div class="pillar-image-wrap">
+            <img src="assets/pleasant_house_ebike.jpg" alt="아스카 문화유산 E-Bike 프라이빗 가이드 투어" class="pillar-img rounded-shadow">
+            <span class="pillar-badge" data-i18n="p3_badge">PILLAR 03 · 自転車ツアー</span>
+          </div>
+          <div class="pillar-text-wrap">
+            <span class="step-num">03</span>
+            <h3 class="pillar-heading" data-i18n="p3_heading">고대의 숨결을 달리는 힐링 E-Bike 가이드 투어</h3>
+            <p class="pillar-description" data-i18n="p3_desc">
+              전기 어시스트 자전거(E-Bike)로 언덕길도 가볍고 상쾌하게! 일반 단체 관광객이 닿지 못하는 아스카무라의 오솔길, 이나부치 다랑이논의 황금빛 물결, 이시부타이 고분의 장엄함을 호스트의 흥미진진한 해설과 함께 만납니다.
+            </p>
+            <ul class="pillar-checklist">
+              <li data-i18n="p3_pt1">✓ 파워풀한 최신형 전동 자전거 & 헬멧, 음료 전원 제공</li>
+              <li data-i18n="p3_pt2">✓ 호스트 단독 동행 프라이빗 코스 (계절별 맞춤 루트)</li>
+              <li data-i18n="p3_pt3">✓ 여행자 안전을 위한 레크리에이션 상해·배상책임 보험 가입</li>
+            </ul>
+            <a href="#tour" class="pillar-link" data-i18n="link_view_tour">투어 코스 자세히 보기 &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Salon & Photography -->
+        <div class="pillar-row reverse">
+          <div class="pillar-image-wrap">
+            <img src="assets/pleasant_house_salon.jpg" alt="커뮤니티 살롱 카페 & 시네마틱 스냅 촬영" class="pillar-img rounded-shadow">
+            <span class="pillar-badge" data-i18n="p4_badge">PILLAR 04 · カフェサロン・撮影</span>
+          </div>
+          <div class="pillar-text-wrap">
+            <span class="step-num">04</span>
+            <h3 class="pillar-heading" data-i18n="p4_heading">대화와 음악이 흐르는 살롱, 그리고 시네마틱 스냅</h3>
+            <p class="pillar-description" data-i18n="p4_desc">
+              오래된 고재 서가와 LP 턴테이블이 놓인 살롱 카페에서 현지 로컬 차와 담소를 나눕니다. 투어와 숙박 중에는 호스트가 전문 장비로 두 분의 자연스러운 미소와 아스카의 절경을 담은 고화질 스냅 사진과 숏폼 비디오를 선물해 드립니다.
+            </p>
+            <ul class="pillar-checklist">
+              <li data-i18n="p4_pt1">✓ 여행 중 촬영된 원본 및 보정본 사진 30장+ 증정</li>
+              <li data-i18n="p4_pt2">✓ 저녁 시간 살롱에서 즐기는 따뜻한 차와 교류의 시간</li>
+              <li data-i18n="p4_pt3">✓ 결혼기념일, 생일, 프로포즈를 위한 서프라이즈 지원</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Stay / Facilities Details -->
+    <section class="section section-stay" id="stay">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="stay_kicker">ROOM & AMENITIES</span>
+          <h2 class="section-title" data-i18n="stay_title">오직 두 분만을 위한 고요한 공간</h2>
+          <div class="divider"></div>
+          <p class="section-intro" data-i18n="stay_lead">
+            약 150m²(45평) 규모의 일본 전통 목조 가옥을 현대적 라이프스타일에 맞게 정밀 리노베이션하였습니다.
+          </p>
+        </div>
+
+        <div class="stay-spec-grid">
+          <div class="spec-card">
+            <div class="spec-icon">📐</div>
+            <h4 data-i18n="spec1_t">독채 전용 면적</h4>
+            <p data-i18n="spec1_d">약 150m² (넓은 거실, 메인 침실, 전통 다실, 다이닝 키친, 전용 정원)</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-icon">🛏️</div>
+            <h4 data-i18n="spec2_t">침실 구성</h4>
+            <p data-i18n="spec2_d">럭셔리 킹사이즈 플랫폼 베드 1개 + 추가 다다미용 최고급 이불 세트</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-icon">🛁</div>
+            <h4 data-i18n="spec3_t">욕실 & 휴식</h4>
+            <p data-i18n="spec3_d">편백 향 가득한 욕조, 오가닉 어메니티, 호텔식 대형 타월 및 가운</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-icon">☕</div>
+            <h4 data-i18n="spec4_t">키친 & 카페 바</h4>
+            <p data-i18n="spec4_d">발뮤다 토스터기, 핸드드립 커피 바, 전기포트, 냉장고, 고급 티 세트</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-icon">📶</div>
+            <h4 data-i18n="spec5_t">스마트 편의시설</h4>
+            <p data-i18n="spec5_d">초고속 광대역 Wi-Fi, 마샬 블루투스 스피커, 공기청정기, 냉난방 완비</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-icon">🚗</div>
+            <h4 data-i18n="spec6_t">주차 & 역 픽업</h4>
+            <p data-i18n="spec6_d">전용 무료 주차 공간 완비, 긴테쓰 아스카역 무료 왕복 픽업 서비스</p>
+          </div>
+        </div>
+
+        <!-- Room Gallery Carousel / Grid -->
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox('assets/pleasant_house_exterior.jpg')">
+            <img src="assets/pleasant_house_exterior.jpg" alt="정원과 툇마루">
+            <div class="gallery-overlay">
+              <span data-i18n="gal_ext">사계절 정원 & 툇마루</span>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/pleasant_house_room.jpg')">
+            <img src="assets/pleasant_house_room.jpg" alt="메인 침실">
+            <div class="gallery-overlay">
+              <span data-i18n="gal_bed">모던 럭셔리 침실</span>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/pleasant_house_bakery.jpg')">
+            <img src="assets/pleasant_house_bakery.jpg" alt="조식 다이닝 테이블">
+            <div class="gallery-overlay">
+              <span data-i18n="gal_bake">수제 베이커리 다이닝</span>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/pleasant_house_salon.jpg')">
+            <img src="assets/pleasant_house_salon.jpg" alt="살롱 라운지">
+            <div class="gallery-overlay">
+              <span data-i18n="gal_salon">살롱 & 라이브러리</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: E-Bike Heritage Tour Itinerary -->
+    <section class="section section-tour bg-cream" id="tour">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="tour_kicker">SIGNATURE HERITAGE TOUR</span>
+          <h2 class="section-title" data-i18n="tour_title">아스카무라 힐링 E-Bike 투어 코스</h2>
+          <div class="divider"></div>
+          <p class="section-intro" data-i18n="tour_lead">
+            걷기에는 너무 멀고, 자동차로는 스쳐 지나치기 쉬운 아스카의 아름다움. 최신 전기자전거로 편안하게 바람을 가르며 천년의 역사 속으로 여행을 떠납니다.
+          </p>
+        </div>
+
+        <!-- Tour Schedule Tabs -->
+        <div class="tour-timeline">
+          <!-- Item 1 -->
+          <div class="timeline-step">
+            <div class="time-badge">10:00</div>
+            <div class="step-card">
+              <div class="step-icon">🚲</div>
+              <div class="step-info">
+                <h4 data-i18n="t_step1_t">Pleasant House 출발 & 안전 브리핑</h4>
+                <p data-i18n="t_step1_d">체형에 맞춘 E-Bike 세팅, 헬멧 착용, 안전 수칙 안내 후 상쾌한 아침 공기를 마시며 전원길로 출발합니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-step">
+            <div class="time-badge">10:45</div>
+            <div class="step-card">
+              <div class="step-icon">🗿</div>
+              <div class="step-info">
+                <h4 data-i18n="t_step2_t">이시부타이 고분 (石舞台古墳) & 거석 유적 탐방</h4>
+                <p data-i18n="t_step2_d">소가노 우마코의 무덤으로 알려진 거대한 석실 고분. 웅장한 돌의 무게감과 고대 역사의 비밀을 호스트의 이야기로 듣습니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-step">
+            <div class="time-badge">11:50</div>
+            <div class="step-card">
+              <div class="step-icon">🌾</div>
+              <div class="step-info">
+                <h4 data-i18n="t_step3_t">이나부치 다랑이논 (稲渕の棚田) & 포토 스냅</h4>
+                <p data-i18n="t_step3_d">‘일본의 계단식 논 100선’에 빛나는 비경. 봄의 신록, 가을의 붉은 피안화와 황금빛 들판을 배경으로 인생 사진을 남깁니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-step">
+            <div class="time-badge">12:45</div>
+            <div class="step-card">
+              <div class="step-icon">🍱</div>
+              <div class="step-info">
+                <h4 data-i18n="t_step4_t">아스카 로컬 카페 런치 & 휴식</h4>
+                <p data-i18n="t_step4_d">현지 농가에서 직접 재배한 신선한 채소와 향토 요리를 맛볼 수 있는 숨은 로컬 레스토랑에서 여유로운 점심을 즐깁니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-step">
+            <div class="time-badge">14:00</div>
+            <div class="step-card">
+              <div class="step-icon">⛩️</div>
+              <div class="step-info">
+                <h4 data-i18n="t_step5_t">아스카데라 (飛鳥寺) & 수수께끼 석조물 (사카후네이시)</h4>
+                <p data-i18n="t_step5_d">일본에서 가장 오래된 대불이 모셔진 유서 깊은 사찰과 미스터리한 고대 석조 유적을 둘러본 뒤 Pleasant House로 귀환합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-note-box card-glass">
+          <span class="note-icon">☔</span>
+          <div class="note-text">
+            <strong data-i18n="rain_policy_t">우천 시 100% 안심 프로그램 운영</strong>
+            <p data-i18n="rain_policy_d">
+              기상 악화로 자전거 운행이 어려운 날에는 당황하실 필요가 없습니다. Pleasant House 살롱에서 즐기는 
+              <strong>'천연효모 수제 베이킹 클래스'</strong>, <strong>'아스카 역사 스토리텔링 살롱'</strong>, 또는 <strong>'나라현 이마이초(今井町) 에도 전통거리 차량 투어'</strong>로 안전하게 대체 진행됩니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Packages & Pricing -->
+    <section class="section section-pricing" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="price_kicker">TRANSPARENT VALUE</span>
+          <h2 class="section-title" data-i18n="price_title">합리적이고 투명한 패키지 요금 안내</h2>
+          <div class="divider"></div>
+          <p class="section-intro" data-i18n="price_lead">
+            숙박, 수제 식사, 투어, 스냅 촬영을 개별 예약할 때의 번거로움과 비용(약 108,000엔 상당)을 덜어드리고, 
+            약 30% 절감된 합리적인 올인원 패키지 요금을 제공합니다.
+          </p>
+        </div>
+
+        <div class="pricing-cards-grid">
+          <!-- Card 1: Signature Experience -->
+          <div class="pricing-card featured">
+            <div class="pricing-badge" data-i18n="badge_best">가장 인기 있는 시그니처 플랜</div>
+            <div class="pricing-header">
+              <h3 class="plan-name" data-i18n="p_plan1_name">시그니처 익스피리언스 (1박 2일)</h3>
+              <p class="plan-desc" data-i18n="p_plan1_desc">숙박 + 수제조식 + E-Bike 가이드 투어 + 스냅 촬영 올인원</p>
+              <div class="plan-price">
+                <span class="currency">¥</span>
+                <span class="amount">68,000</span>
+                <span class="unit">~ / 2인 (세금 포함)</span>
+              </div>
+              <div class="price-note" data-i18n="price_note_sig">평일: 68,000엔 | 주말·공휴일: 75,000엔</div>
+            </div>
+            <ul class="plan-features">
+              <li data-i18n="p1_f1">✓ 150m² 프라이빗 고민가 독채 1박 (1일 1팀 전용)</li>
+              <li data-i18n="p1_f2">✓ 당일 아침 갓 구운 천연효모 수제 베이커리 & 로컬 조식</li>
+              <li data-i18n="p1_f3">✓ 호스트 전담 아스카 문화유산 E-Bike 가이드 투어 (전동자전거 & 헬멧 대여 포함)</li>
+              <li data-i18n="p1_f4">✓ 여행의 순간을 담은 전문 스냅 사진 (30장 이상 고화질 전송)</li>
+              <li data-i18n="p1_f5">✓ 투어 참가자 전원 레크리에이션 상해보험 자동 가입</li>
+              <li data-i18n="p1_f6">✓ 긴테쓰 아스카역 무료 왕복 픽업 서비스</li>
+              <li data-i18n="p1_f7">✓ 우천 시 수제 베이킹 클래스 & 아스카 역사 살롱 무료 대체</li>
+            </ul>
+            <div class="plan-footer">
+              <a href="#booking" class="btn btn-primary btn-block" onclick="selectPlan('signature')" data-i18n="btn_book_sig">시그니처 패키지 예약 문의</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Simple Retreat -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="plan-name" data-i18n="p_plan2_name">심플 스테이 리트리트 (1박 2일)</h3>
+              <p class="plan-desc" data-i18n="p_plan2_desc">조용한 고택에서의 사색과 휴식을 원하는 분들을 위한 스테이</p>
+              <div class="plan-price">
+                <span class="currency">¥</span>
+                <span class="amount">42,000</span>
+                <span class="unit">~ / 2인 (세금 포함)</span>
+              </div>
+              <div class="price-note" data-i18n="price_note_ret">평일: 42,000엔 | 주말·공휴일: 48,000엔</div>
+            </div>
+            <ul class="plan-features">
+              <li data-i18n="p2_f1">✓ 150m² 프라이빗 고민가 독채 1박 (1일 1팀 전용)</li>
+              <li data-i18n="p2_f2">✓ 당일 아침 갓 구운 천연효모 수제 베이커리 & 로컬 조식</li>
+              <li data-i18n="p2_f3">✓ 웰컴 로컬 티 & 계절 디저트 제공</li>
+              <li data-i18n="p2_f4">✓ 살롱 라이브러리 및 음악 감상 공간 자유 이용</li>
+              <li data-i18n="p2_f5">✓ 긴테쓰 아스카역 무료 왕복 픽업 서비스</li>
+              <li class="disabled" data-i18n="p2_f6">✕ 전일정 가이드 투어 및 스냅 촬영 (불포함, 개별 옵션 신청 가능)</li>
+            </ul>
+            <div class="plan-footer">
+              <a href="#booking" class="btn btn-secondary btn-block" onclick="selectPlan('retreat')" data-i18n="btn_book_ret">심플 리트리트 예약 문의</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Anniversary Add-on Banner -->
+        <div class="addon-banner card-glass">
+          <div class="addon-content">
+            <div class="addon-tag" data-i18n="addon_tag">SPECIAL ANNIVERSARY</div>
+            <h4 class="addon-title" data-i18n="addon_title">소중한 기념일, 감동을 더하는 특별 맞춤 옵션</h4>
+            <p class="addon-desc" data-i18n="addon_desc">
+              생일, 결혼기념일, 프러포즈, 부모님 효도 여행을 위한 <strong>'수제 기념일 케이크 & 스파클링 와인' (+¥8,000)</strong>, 
+              <strong>'아스카 로컬 프라이빗 디너 예약 대행'</strong> 등 원하시는 감동의 순간을 맞춤 연출해 드립니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Price Estimator -->
+        <div class="calculator-container card-glass">
+          <h4 class="calc-title"><span class="icon">🧮</span> <span data-i18n="calc_heading">실시간 예상 요금 계산기</span></h4>
+          <p class="calc-desc" data-i18n="calc_sub">일정과 옵션을 선택하시면 예상 결제 금액을 엔화(JPY)와 원화(KRW)로 바로 확인하실 수 있습니다.</p>
+          
+          <div class="calc-grid">
+            <div class="calc-control">
+              <label data-i18n="calc_plan_label">패키지 종류</label>
+              <select id="calcPlan" onchange="calculateEstimate()">
+                <option value="signature">시그니처 익스피리언스 (숙박+조식+투어+스냅) - 68,000엔~</option>
+                <option value="retreat">심플 스테이 리트리트 (숙박+조식) - 42,000엔~</option>
+              </select>
+            </div>
+
+            <div class="calc-control">
+              <label data-i18n="calc_day_label">숙박 요일</label>
+              <select id="calcDayType" onchange="calculateEstimate()">
+                <option value="weekday" data-i18n="calc_weekday">평일 (일~목)</option>
+                <option value="weekend" data-i18n="calc_weekend">주말 / 일본 공휴일 (금, 토, 연휴)</option>
+              </select>
+            </div>
+
+            <div class="calc-control">
+              <label data-i18n="calc_nights_label">숙박 일수</label>
+              <select id="calcNights" onchange="calculateEstimate()">
+                <option value="1">1박 2일</option>
+                <option value="2">2박 3일 (연박 10% 추가 할인)</option>
+                <option value="3">3박 4일 (연박 15% 추가 할인)</option>
+              </select>
+            </div>
+
+            <div class="calc-control">
+              <label data-i18n="calc_addon_label">기념일 특별 옵션</label>
+              <select id="calcAddon" onchange="calculateEstimate()">
+                <option value="none" data-i18n="calc_opt_none">선택 안 함</option>
+                <option value="anniversary" data-i18n="calc_opt_cake">수제 케이크 & 스파클링 와인 (+8,000엔)</option>
+                <option value="dinner" data-i18n="calc_opt_dinner">로컬 디너 2인 코스 예약 (+14,000엔)</option>
+                <option value="full" data-i18n="calc_opt_full">풀 스페셜 (케이크+와인+디너) (+20,000엔)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-result-box">
+            <div class="result-label" data-i18n="calc_total_label">예상 합계 금액 (세금 및 보험료 포함)</div>
+            <div class="result-prices">
+              <span class="jpy-price" id="calcResultJpy">¥68,000</span>
+              <span class="krw-approx" id="calcResultKrw">(약 612,000원 / 환율 900원 기준)</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" onclick="applyToBookingForm()" data-i18n="btn_apply_calc">이 조건으로 예약 문의 작성 &darr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Location & Access -->
+    <section class="section section-location bg-cream" id="location">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="loc_kicker">LOCATION & ACCESS</span>
+          <h2 class="section-title" data-i18n="loc_title">오시는 길 & 픽업 서비스 안내</h2>
+          <div class="divider"></div>
+          <p class="section-intro" data-i18n="loc_lead">
+            오사카, 교토, 간사이 국제공항에서 1시간 이내에 닿을 수 있는 천년의 힐링 안식처입니다.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-card card-glass">
+            <h3 class="loc-card-title"><span class="icon">🚆</span> <span data-i18n="loc_transit_t">주요 거점에서의 대중교통</span></h3>
+            <ul class="transit-list">
+              <li>
+                <strong>간사이 국제공항 (KIX) 출발</strong>
+                <p>공항 리무진 버스 또는 JR/난카이선 &rarr; 긴테쓰선 환승 &rarr; 긴테쓰 아스카역(飛鳥駅) 도착 (약 1시간 10분)</p>
+              </li>
+              <li>
+                <strong>오사카 난바 / 텐노지 출발</strong>
+                <p>긴테쓰 아베노바시역 &rarr; 급행열차로 긴테쓰 아스카역 직통 또는 환승 (약 45~50분)</p>
+              </li>
+              <li>
+                <strong>교토역 출발</strong>
+                <p>긴테쓰 교토선 특급/급행 &rarr; 카시하라진구마에 경유 &rarr; 아스카역 도착 (약 55분)</p>
+              </li>
+            </ul>
+
+            <div class="pickup-box">
+              <span class="pickup-badge">FREE PICKUP</span>
+              <h4 data-i18n="pickup_title">긴테쓰 아스카역 무료 픽업</h4>
+              <p data-i18n="pickup_desc">사전에 도착 시간을 알려주시면 호스트가 직접 긴테쓰 아스카역(飛鳥駅) 또는 카시하라진구마에역(橿原神宮前駅)으로 마중 나갑니다.</p>
+            </div>
+          </div>
+
+          <div class="location-card card-glass">
+            <h3 class="loc-card-title"><span class="icon">📍</span> <span data-i18n="loc_address_t">주소 및 주변 관광 안내</span></h3>
+            <div class="address-details">
+              <p><strong>위치:</strong> 일본 나라현 다카이치군 아스카무라 (奈良県高市郡明日香村)</p>
+              <p><strong>체크인 / 체크아웃:</strong> 15:00 / 11:00 (협의 가능)</p>
+              <p><strong>주변 명소:</strong> 이시부타이 고분, 다카마쓰즈카 고분, 이나부치 다랑이논, 아스카데라 사찰, 橿原 今井町(에도 시대 전통가옥 보존지구 - 차량 10분)</p>
+            </div>
+
+            <!-- Map Mockup / Link -->
+            <div class="map-placeholder">
+              <div class="map-content">
+                <span class="map-pin">📍</span>
+                <h4>Pleasant House (Salon Pleasant)</h4>
+                <p>Asuka-mura, Takaichi-gun, Nara, Japan</p>
+                <a href="https://maps.google.com/?q=Asuka+Village+Nara" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="btn_open_gmap">구글 지도에서 크게 보기 &nearr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: FAQ -->
+    <section class="section section-faq" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" data-i18n="faq_kicker">QUESTIONS & ANSWERS</span>
+          <h2 class="section-title" data-i18n="faq_title">자주 묻는 질문 (FAQ)</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="faq_q1">Q. 1일 1팀 전용 숙소라는 것은 다른 손님과 마주치지 않는다는 뜻인가요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a1">네, 맞습니다. Pleasant House는 오직 하루 단 한 팀(기본 2인, 최대 4인)에게만 150m² 독채 가옥과 전용 정원을 온전히 제공합니다. 다른 여행자의 방해 없이 완벽한 프라이버시와 평온함을 누리실 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="faq_q2">Q. 일본어를 잘 못하는데 의사소통에 문제가 없나요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a2">전혀 걱정하지 않으셔도 됩니다. 호스트는 한국인 남편과 일본인 아내로 이루어진 부부로서, 한국어, 일본어, 영어로 완벽한 소통이 가능합니다. 예약 상담부터 투어 가이드, 긴급 상황 대처까지 모국어로 편안하게 안내받으실 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="faq_q3">Q. E-Bike(전기자전거)를 타본 적이 없거나 자전거가 서툴러도 투어가 가능한가요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a3">Pleasant House가 제공하는 E-Bike는 조작이 매우 직관적이고 안정적이며 페달을 살짝만 밟아도 언덕을 힘들이지 않고 오를 수 있습니다. 출발 전 호스트가 1:1 안전 브리핑과 주행 연습을 돕습니다. 만약 자전거 주행이 전혀 불가능하신 경우, 호스트 전용 차량을 이용한 프라이빗 드라이브 투어로 변경도 가능합니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="faq_q4">Q. 비가 오거나 날씨가 안 좋으면 투어는 어떻게 되나요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a4">우천 시에는 참가자의 안전을 위해 야외 자전거 투어를 중단하고, Pleasant House 실내에서 진행되는 '천연효모 제빵 클래스', '아스카 역사 문화 살롱', 또는 차량을 이용한 '에도 전통거리(이마이초) 산책 투어'로 무료 전환됩니다. 비가 와도 더욱 낭만적인 추억을 만드실 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="faq_q5">Q. 식사는 어떻게 제공되나요? (조식 & 석식)</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a5">매일 아침 호스트가 당일 새벽 직접 구워낸 천연발효 빵과 아스카산 제철 유기농 채소, 샐러드, 계란 요리, 핸드드립 커피가 조식으로 무료 제공됩니다. 저녁 식사의 경우 아스카무라의 유명 로컬 전통 맛집 또는 프라이빗 코스 요리 전문점 예약 및 왕복 차량 픽업을 정성껏 도와드립니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="faq_q6">Q. 예약 및 취소, 환불 규정은 어떻게 되나요?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a6">1일 1팀 전용 운영 특성상, 체크인 14일 전까지는 전액 100% 무료 취소가 가능하며, 7일 전 50%, 3일 전 20%, 2일 전~당일은 환불이 불가합니다. 예약 문의서를 제출해 주시면 24시간 이내에 예약 확정 안내와 결제 링크(카드 결제 / 계좌이체)를 개별 안내해 드립니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Reservation & Booking Inquiry -->
+    <section class="section section-booking bg-cream" id="booking">
+      <div class="container">
+        <div class="booking-wrapper card-glass">
+          <div class="booking-info-col">
+            <span class="section-subtitle" data-i18n="book_kicker">RESERVATION & INQUIRY</span>
+            <h2 class="booking-title" data-i18n="book_title">Pleasant House 예약 문의</h2>
+            <div class="divider align-left"></div>
+            <p class="booking-desc" data-i18n="book_desc">
+              하루 단 1팀에게만 허락된 공간이기에, 빠른 마감이 예상됩니다. 희망하시는 일정과 옵션을 남겨주시면 호스트가 일정을 확인한 후 24시간 이내에 정성껏 회신드립니다.
+            </p>
+            
+            <div class="host-contact-badges">
+              <div class="contact-item">
+                <span class="c-icon">📧</span>
+                <div>
+                  <strong>이메일 문의</strong>
+                  <span>pleasanthouse.asuka@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="c-icon">💬</span>
+                <div>
+                  <strong>카카오톡 / LINE 상담</strong>
+                  <span>ID: pleasanthouse_jp</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="c-icon">📞</span>
+                <div>
+                  <strong>호스트 직통</strong>
+                  <span>+81-744-XX-XXXX (일본) / 한국어 가능</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-form-col">
+            <form id="reservationForm" class="res-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="guestName" data-i18n="f_name">예약자 성함 (한글/영문) *</label>
+                  <input type="text" id="guestName" required placeholder="예: 홍길동 (HONG GILDONG)">
+                </div>
+                <div class="form-field">
+                  <label for="guestPhone" data-i18n="f_phone">연락처 (휴대전화) *</label>
+                  <input type="tel" id="guestPhone" required placeholder="010-0000-0000 / +82...">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="guestEmail" data-i18n="f_email">이메일 주소 *</label>
+                <input type="email" id="guestEmail" required placeholder="your_email@example.com">
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="checkinDate" data-i18n="f_checkin">체크인 희망일 *</label>
+                  <input type="date" id="checkinDate" required>
+                </div>
+                <div class="form-field">
+                  <label for="checkoutDate" data-i18n="f_checkout">체크아웃 희망일 *</label>
+                  <input type="date" id="checkoutDate" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="guestCount" data-i18n="f_guests">투숙 인원 *</label>
+                  <select id="guestCount" required>
+                    <option value="2">성인 2인 (커플/부부 - 권장)</option>
+                    <option value="1">1인 (솔로 힐링 리트리트)</option>
+                    <option value="3">성인 3인 (가족/친구)</option>
+                    <option value="4">성인 4인 (최대 인원)</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="packageSelect" data-i18n="f_package">원하시는 패키지 *</label>
+                  <select id="packageSelect" required>
+                    <option value="signature">시그니처 익스피리언스 (숙박+조식+투어+스냅)</option>
+                    <option value="retreat">심플 스테이 리트리트 (숙박+조식)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="specialRequest" data-i18n="f_special">특별 요청사항 (기념일 축하, 알레르기 식단, 픽업 시간 등)</label>
+                <textarea id="specialRequest" rows="3" placeholder="예: 결혼 10주년 기념 여행입니다. 수제 케이크 옵션 희망하며, 아스카역에 14:30 도착 예정입니다."></textarea>
+              </div>
+
+              <div class="form-consent">
+                <input type="checkbox" id="consentCheck" required>
+                <label for="consentCheck" data-i18n="f_consent">개인정보 수집 및 예약 상담 연락에 동의합니다.</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                <span data-i18n="btn_submit_res">예약 문의서 제출하기</span> &rarr;
+              </button>
+            </form>
+
+            <div id="formSuccessMessage" class="form-success-box" style="display: none;">
+              <div class="success-icon">🎉</div>
+              <h4 data-i18n="succ_t">예약 문의가 정상 접수되었습니다!</h4>
+              <p data-i18n="succ_d">소중한 문의 감사드립니다. 호스트가 일정을 확인한 후 남겨주신 연락처/이메일로 24시간 이내에 상세 견적 및 확정 안내를 드리겠습니다.</p>
+              <button type="button" class="btn btn-outline btn-sm" onclick="resetForm()" data-i18n="btn_new_inquiry">새 문의 작성하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image Lightbox Modal -->
+  <div id="imageLightbox" class="lightbox-modal" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightboxImg" src="" alt="확대 보기">
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col brand-col">
+        <h3 class="footer-logo">Pleasant House</h3>
+        <p class="footer-sub">サロン・プレザント (Salon Pleasant)</p>
+        <p class="footer-desc" data-i18n="foot_desc">
+          나라현 아스카무라의 아름다운 자연과 고대 역사 속에서 삶의 쉼표를 선물하는 1일 1팀 한정 체험형 고민가 살롱 & 게스트하우스.
+        </p>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4 data-i18n="foot_quick">빠른 이동</h4>
+        <ul>
+          <li><a href="#about" data-i18n="nav_about">브랜드 철학</a></li>
+          <li><a href="#pillars" data-i18n="nav_pillars">4대 시너지 체험</a></li>
+          <li><a href="#stay" data-i18n="nav_stay">객실 & 시설</a></li>
+          <li><a href="#tour" data-i18n="nav_tour">E-Bike 가이드 투어</a></li>
+          <li><a href="#pricing" data-i18n="nav_pricing">패키지 & 요금</a></li>
+          <li><a href="#booking" data-i18n="cta_book">예약 문의</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4 data-i18n="foot_info">운영 및 위치 정보</h4>
+        <p><strong>주소:</strong> 奈良県高市郡明日香村 (Asuka, Nara, Japan)</p>
+        <p><strong>대표 호스트:</strong> 안(Ahn) 부부</p>
+        <p><strong>연락처:</strong> pleasanthouse.asuka@gmail.com</p>
+        <p><strong>체류 형태:</strong> 주택숙박사업법(민박신법) 정식 등록 운영 예정</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <p>&copy; 2026 Pleasant House (Salon Pleasant). All Rights Reserved.</p>
+        <p class="g-sites-note">Optimized for Google Sites & Modern Web Browsers</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pleasant House - 히어로 배너 & 핵심 하이라이트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #1f2120;
+      color: #ffffff;
+      padding: 0;
+      margin: 0;
+    }
+    .hero-banner {
+      position: relative;
+      padding: 80px 24px 70px 24px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(31,33,32,0.85) 0%, rgba(20,22,21,0.95) 100%);
+      overflow: hidden;
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      color: #c59b27;
+      border: 1px solid rgba(197, 155, 39, 0.4);
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      background: rgba(0,0,0,0.3);
+    }
+    .title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 34px;
+      line-height: 1.35;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+    .title span { color: #c59b27; }
+    .desc {
+      font-size: 15px;
+      color: #dfd8cc;
+      max-width: 680px;
+      margin: 0 auto 30px auto;
+      line-height: 1.7;
+    }
+    .chips-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      max-width: 860px;
+      margin: 0 auto 36px auto;
+    }
+    @media (max-width: 768px) {
+      .chips-grid { grid-template-columns: repeat(2, 1fr); }
+      .title { font-size: 26px; }
+    }
+    .chip {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 14px;
+      text-align: center;
+    }
+    .chip-icon { font-size: 22px; display: block; margin-bottom: 6px; }
+    .chip-title { font-size: 13px; font-weight: 700; color: #ffffff; display: block; }
+    .chip-sub { font-size: 11px; color: #a9a397; }
+    .btn-cta {
+      display: inline-block;
+      background: #c59b27;
+      color: #1a160d;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 15px;
+      transition: background 0.2s ease;
+    }
+    .btn-cta:hover {
+      background: #b58918;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero-banner">
+  <span class="kicker">ASUKA VILLAGE, NARA · 1 DAY 1 GROUP ONLY</span>
+  <h1 class="title">
+    천년의 숨결을 품은 아스카의 들판,<br>
+    <span>단 한 팀만을 위한</span> 따뜻한 쉼의 집
+  </h1>
+  <p class="desc">
+    한일 부부의 인생 2막이 담긴 150m² 프라이빗 고민가 독채 스테이.<br>
+    갓 구운 천연효모 빵 조식과 전일정 E-Bike 가이드 투어로 아스카의 진정한 낭만을 만나보세요.
+  </p>
+
+  <div class="chips-grid">
+    <div class="chip">
+      <span class="chip-icon">🏯</span>
+      <span class="chip-title">150m² 고민가 독채</span>
+      <span class="chip-sub">1일 1팀 전용 프라이빗</span>
+    </div>
+    <div class="chip">
+      <span class="chip-icon">🥐</span>
+      <span class="chip-title">수제 베이커리 조식</span>
+      <span class="chip-sub">갓 구운 천연발효 빵</span>
+    </div>
+    <div class="chip">
+      <span class="chip-icon">🚲</span>
+      <span class="chip-title">E-Bike 가이드 투어</span>
+      <span class="chip-sub">아스카 문화유산 동행</span>
+    </div>
+    <div class="chip">
+      <span class="chip-icon">📷</span>
+      <span class="chip-title">감성 스냅 사진 증정</span>
+      <span class="chip-sub">30장+ 고화질 기록</span>
+    </div>
+  </div>
+
+  <a href="#booking" class="btn-cta" target="_top">예약 및 요금 문의하기 →</a>
+</div>
+
+</body>
+</html>

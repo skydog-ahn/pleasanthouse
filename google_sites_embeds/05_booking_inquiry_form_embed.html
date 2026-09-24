@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pleasant House - 예약 문의 폼 위젯</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #faf7f2;
+      color: #2c2d2a;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .booking-card {
+      max-width: 650px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid #e2dbcf;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.04);
+    }
+    .form-header {
+      margin-bottom: 24px;
+      border-bottom: 1px solid #ede7dc;
+      padding-bottom: 16px;
+    }
+    .form-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 22px;
+      color: #1f2120;
+      margin-bottom: 4px;
+    }
+    .form-sub {
+      font-size: 13px;
+      color: #6c6b65;
+    }
+    .res-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 580px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .field label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #383935;
+    }
+    .field input, .field select, .field textarea {
+      padding: 11px 12px;
+      border: 1px solid #dcd4c7;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: inherit;
+      color: #1f2120;
+      background: #ffffff;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: none;
+      border-color: #805b38;
+      box-shadow: 0 0 0 3px rgba(128,91,56,0.12);
+    }
+    .consent-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #6c6b65;
+      margin-top: 4px;
+    }
+    .btn-submit {
+      background: #805b38;
+      color: #ffffff;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      margin-top: 8px;
+    }
+    .btn-submit:hover {
+      background: #634325;
+    }
+    .success-alert {
+      display: none;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    .success-icon { font-size: 40px; margin-bottom: 12px; }
+    .success-title { font-family: 'Noto Serif KR', serif; font-size: 18px; margin-bottom: 8px; }
+    .success-desc { font-size: 13px; color: #6c6b65; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<div class="booking-card">
+  <div class="form-header">
+    <h3 class="form-title">Pleasant House 예약 문의</h3>
+    <p class="form-sub">1일 1팀 한정 운영으로 빠른 마감이 예상됩니다. 일정을 남겨주시면 24시간 내 회신드립니다.</p>
+  </div>
+
+  <form id="embedBookingForm" class="res-form" onsubmit="submitEmbedForm(event)">
+    <div class="form-row">
+      <div class="field">
+        <label>예약자 성함 *</label>
+        <input type="text" id="eName" required placeholder="예: 홍길동">
+      </div>
+      <div class="field">
+        <label>연락처 (휴대전화) *</label>
+        <input type="tel" id="ePhone" required placeholder="010-0000-0000">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>이메일 주소 *</label>
+      <input type="email" id="eEmail" required placeholder="your_email@example.com">
+    </div>
+
+    <div class="form-row">
+      <div class="field">
+        <label>체크인 희망일 *</label>
+        <input type="date" id="eCheckin" required>
+      </div>
+      <div class="field">
+        <label>체크아웃 희망일 *</label>
+        <input type="date" id="eCheckout" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="field">
+        <label>투숙 인원 *</label>
+        <select id="eGuests" required>
+          <option value="2">성인 2인 (커플/부부 - 권장)</option>
+          <option value="1">1인 (솔로 리트리트)</option>
+          <option value="3">성인 3인 (가족)</option>
+          <option value="4">성인 4인 (최대)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>선호 패키지 *</label>
+        <select id="ePackage" required>
+          <option value="signature">시그니처 익스피리언스 (숙박+조식+투어+스냅)</option>
+          <option value="retreat">심플 스테이 리트리트 (숙박+조식)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>특별 요청사항 (기념일 축하, 알레르기 식단, 역 픽업 시간 등)</label>
+      <textarea id="eNotes" rows="3" placeholder="예: 결혼기념일 여행입니다. 케이크 옵션 희망하며, 아스카역에 14:00 도착 예정입니다."></textarea>
+    </div>
+
+    <div class="consent-box">
+      <input type="checkbox" id="eConsent" required>
+      <label for="eConsent">개인정보 수집 및 예약 상담 안내에 동의합니다.</label>
+    </div>
+
+    <button type="submit" class="btn-submit">예약 문의서 제출하기 →</button>
+  </form>
+
+  <div id="embedSuccess" class="success-alert">
+    <div class="success-icon">🎉</div>
+    <h4 class="success-title">예약 문의가 정상 접수되었습니다!</h4>
+    <p class="success-desc">호스트가 접수된 내용을 확인한 후 24시간 이내에 입력하신 연락처 및 이메일로 상세 일정과 견적을 안내해 드리겠습니다.</p>
+  </div>
+</div>
+
+<script>
+function submitEmbedForm(e) {
+  e.preventDefault();
+  document.getElementById('embedBookingForm').style.display = 'none';
+  document.getElementById('embedSuccess').style.display = 'block';
+}
+
+// Set default dates
+const d = new Date();
+d.setDate(d.getDate() + 1);
+document.getElementById('eCheckin').value = d.toISOString().split('T')[0];
+d.setDate(d.getDate() + 1);
+document.getElementById('eCheckout').value = d.toISOString().split('T')[0];
+</script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pleasant House - E-Bike 투어 코스 위젯</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #faf7f2;
+      color: #2c2d2a;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .timeline-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      margin-bottom: 24px;
+    }
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #ffffff;
+      border: 1px solid #e2dbcf;
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .time-tag {
+      background: #805b38;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      flex-shrink: 0;
+      min-width: 75px;
+      text-align: center;
+    }
+    .item-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .item-content h4 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 16px;
+      color: #1f2120;
+      margin-bottom: 4px;
+    }
+    .item-content p {
+      font-size: 13px;
+      color: #6c6b65;
+      line-height: 1.6;
+    }
+    .rain-box {
+      background: #eaf0e8;
+      border: 1px solid #b8d2b4;
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .rain-icon { font-size: 24px; }
+    .rain-text strong {
+      display: block;
+      font-size: 14px;
+      color: #2e472a;
+      margin-bottom: 2px;
+    }
+    .rain-text p {
+      font-size: 12px;
+      color: #456141;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<div class="timeline-container">
+  <div class="timeline-list">
+    <div class="timeline-item">
+      <span class="time-tag">10:00</span>
+      <span class="item-icon">🚲</span>
+      <div class="item-content">
+        <h4>Pleasant House 출발 & 안전 브리핑</h4>
+        <p>체형 맞춤 E-Bike 세팅, 헬멧 착용, 안전 수칙 안내 후 상쾌한 아침 공기를 마시며 전원길로 출발합니다.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-tag">10:45</span>
+      <span class="item-icon">🗿</span>
+      <div class="item-content">
+        <h4>이시부타이 고분 (石舞台古墳) & 거석 유적 탐방</h4>
+        <p>소가노 우마코의 무덤으로 알려진 거대한 석실 고분. 웅장한 돌의 무게감과 고대 역사의 비밀을 호스트의 이야기로 듣습니다.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-tag">11:50</span>
+      <span class="item-icon">🌾</span>
+      <div class="item-content">
+        <h4>이나부치 다랑이논 (稲渕の棚田) & 포토 스냅</h4>
+        <p>‘일본의 계단식 논 100선’에 빛나는 비경. 봄의 신록, 가을의 붉은 피안화와 황금빛 들판을 배경으로 인생 사진을 남깁니다.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-tag">12:45</span>
+      <span class="item-icon">🍱</span>
+      <div class="item-content">
+        <h4>아스카 로컬 카페 런치 & 휴식</h4>
+        <p>현지 농가에서 직접 재배한 신선한 채소와 향토 요리를 맛볼 수 있는 숨은 로컬 레스토랑에서 여유로운 점심을 즐깁니다.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <span class="time-tag">14:00</span>
+      <span class="item-icon">⛩️</span>
+      <div class="item-content">
+        <h4>아스카데라 (飛鳥寺) & 수수께끼 석조물 (사카후네이시)</h4>
+        <p>일본에서 가장 오래된 대불이 모셔진 유서 깊은 사찰과 미스터리한 고대 석조 유적을 둘러본 뒤 Pleasant House로 귀환합니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rain-box">
+    <span class="rain-icon">☔</span>
+    <div class="rain-text">
+      <strong>우천 시 100% 안심 프로그램 운영</strong>
+      <p>기상 악화 시 살롱에서 진행되는 '천연효모 제빵 클래스', '아스카 역사 스토리텔링 살롱', 또는 차량을 이용한 '에도 전통거리(이마이초) 산책 투어'로 안전하게 대체 진행됩니다.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
