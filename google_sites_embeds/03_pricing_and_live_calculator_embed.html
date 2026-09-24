@@ -193,6 +193,69 @@
       color: #a8a39a;
       margin-left: 8px;
     }
+
+    /* Mobile Enhancements */
+    @media (max-width: 600px) {
+      body {
+        padding: 14px 10px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+      .pricing-cards {
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      .card {
+        padding: 26px 18px;
+        border-radius: 14px;
+      }
+      .card-title {
+        font-size: 18px;
+      }
+      .price-amount {
+        font-size: 28px;
+      }
+      .btn {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .calculator-box {
+        padding: 20px 16px;
+        border-radius: 14px;
+      }
+      .calc-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .calc-item select {
+        min-height: 48px;
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .calc-result {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 18px 16px;
+        gap: 14px;
+      }
+      .res-val {
+        font-size: 28px;
+        display: block;
+      }
+      .res-krw {
+        display: block;
+        margin-left: 0;
+        margin-top: 4px;
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -210,7 +273,7 @@
         <span class="price-sub">평일: 68,000엔 / 주말·공휴일: 75,000엔 (2인 세금 포함)</span>
       </div>
       <ul class="features-list">
-        <li>✓ 150m² 프라이빗 고민가 독채 1박 (1일 1팀 전용)</li>
+        <li>✓ 프라이빗 전통 고민가 독채 1박 (1일 1팀 전용)</li>
         <li>✓ 당일 아침 갓 구운 천연효모 수제 베이커리 & 로컬 조식</li>
         <li>✓ 호스트 전담 아스카 문화유산 E-Bike 가이드 투어 (전기자전거 & 헬멧 대여 포함)</li>
         <li>✓ 여행의 순간을 담은 전문 스냅 사진 (30장 이상 고화질 전송)</li>
@@ -229,7 +292,7 @@
         <span class="price-sub">평일: 42,000엔 / 주말·공휴일: 48,000엔 (2인 세금 포함)</span>
       </div>
       <ul class="features-list">
-        <li>✓ 150m² 프라이빗 고민가 독채 1박 (1일 1팀 전용)</li>
+        <li>✓ 프라이빗 전통 고민가 독채 1박 (1일 1팀 전용)</li>
         <li>✓ 당일 아침 갓 구운 천연효모 수제 베이커리 & 로컬 조식</li>
         <li>✓ 웰컴 로컬 티 & 계절 디저트 제공</li>
         <li>✓ 살롱 라이브러리 및 음악 감상 공간 자유 이용</li>

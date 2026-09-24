@@ -60,6 +60,14 @@
       .chips-grid { grid-template-columns: repeat(2, 1fr); }
       .title { font-size: 26px; }
     }
+    @media (max-width: 480px) {
+      .hero-banner { padding: 50px 16px 40px 16px; word-break: keep-all; overflow-wrap: break-word; }
+      .title { font-size: 22px; line-height: 1.35; }
+      .desc { font-size: 13px; margin-bottom: 24px; line-height: 1.65; }
+      .chips-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 24px; }
+      .chip { padding: 10px 12px; }
+      .btn-cta { width: 100%; text-align: center; padding: 13px 20px; font-size: 14px; display: block; box-sizing: border-box; }
+    }
     .chip {
       background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.15);
@@ -91,19 +99,19 @@
 <div class="hero-banner">
   <span class="kicker">ASUKA VILLAGE, NARA · 1 DAY 1 GROUP ONLY</span>
   <h1 class="title">
-    천년의 숨결을 품은 아스카의 들판,<br>
+    천년의 숨결을 품은 아스카 들판,<br>
     <span>단 한 팀만을 위한</span> 따뜻한 쉼의 집
   </h1>
   <p class="desc">
-    한일 부부의 인생 2막이 담긴 150m² 프라이빗 고민가 독채 스테이.<br>
+    전 세계 여행자 누구에게나 열린 프라이빗 고민가 독채 스테이.<br>
     갓 구운 천연효모 빵 조식과 전일정 E-Bike 가이드 투어로 아스카의 진정한 낭만을 만나보세요.
   </p>
 
   <div class="chips-grid">
     <div class="chip">
       <span class="chip-icon">🏯</span>
-      <span class="chip-title">150m² 고민가 독채</span>
-      <span class="chip-sub">1일 1팀 전용 프라이빗</span>
+      <span class="chip-title">프라이빗 고민가 독채</span>
+      <span class="chip-sub">1일 1팀 전용 힐링</span>
     </div>
     <div class="chip">
       <span class="chip-icon">🥐</span>

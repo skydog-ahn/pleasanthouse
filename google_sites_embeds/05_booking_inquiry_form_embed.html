@@ -51,7 +51,42 @@
       gap: 14px;
     }
     @media (max-width: 580px) {
-      .form-row { grid-template-columns: 1fr; }
+      body {
+        padding: 12px 8px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+      .booking-card {
+        padding: 20px 14px;
+        border-radius: 14px;
+      }
+      .form-row { grid-template-columns: 1fr; gap: 12px; }
+      .field input, .field select, .field textarea {
+        min-height: 48px;
+        padding: 12px 14px;
+        font-size: 14px;
+        border-radius: 10px;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      .field textarea {
+        min-height: 90px;
+      }
+      .consent-box {
+        font-size: 12px;
+        align-items: flex-start;
+        line-height: 1.4;
+      }
+      .consent-box input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+      .btn-submit {
+        min-height: 50px;
+        font-size: 15px;
+      }
     }
     .field {
       display: flex;
@@ -71,6 +106,8 @@
       font-family: inherit;
       color: #1f2120;
       background: #ffffff;
+      box-sizing: border-box;
+      width: 100%;
     }
     .field input:focus, .field select:focus, .field textarea:focus {
       outline: none;
@@ -96,6 +133,10 @@
       cursor: pointer;
       transition: background 0.2s ease;
       margin-top: 8px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .btn-submit:hover {
       background: #634325;
@@ -150,7 +191,7 @@
       <div class="field">
         <label>투숙 인원 *</label>
         <select id="eGuests" required>
-          <option value="2">성인 2인 (커플/부부 - 권장)</option>
+          <option value="2">성인 2인 (기본 2인 - 권장)</option>
           <option value="1">1인 (솔로 리트리트)</option>
           <option value="3">성인 3인 (가족)</option>
           <option value="4">성인 4인 (최대)</option>
