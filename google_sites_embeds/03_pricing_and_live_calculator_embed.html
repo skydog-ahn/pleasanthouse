@@ -27,7 +27,7 @@
       margin-bottom: 30px;
     }
     @media (max-width: 768px) {
-      .pricing-cards { grid-template-columns: 1fr; }
+      .pricing-cards { grid-template-columns: minmax(0, 1fr); }
     }
     .card {
       background: #ffffff;
@@ -198,7 +198,7 @@
     @media (max-width: 600px) {
       body {
         padding: 14px 10px;
-        word-break: keep-all;
+        word-break: keep-all; overflow-wrap: anywhere;
         overflow-wrap: break-word;
       }
       .pricing-cards {
@@ -226,7 +226,7 @@
         border-radius: 14px;
       }
       .calc-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 12px;
       }
       .calc-item select {
@@ -278,7 +278,7 @@
         <li>✓ 호스트 전담 아스카 문화유산 E-Bike 가이드 투어 (전기자전거 & 헬멧 대여 포함)</li>
         <li>✓ 여행의 순간을 담은 전문 스냅 사진 (30장 이상 고화질 전송)</li>
         <li>✓ 레크리에이션 상해보험 자동 가입 & 긴테쓰 아스카역 무료 왕복 픽업</li>
-        <li>✓ 우천 시 수제 베이킹 클래스 & 역사 살롱 무료 대체</li>
+        <li>✓ 우천 시 수제 베이킹 클래스 & 역사 스토리텔링 무료 대체</li>
       </ul>
       <a href="#booking" class="btn btn-primary" target="_top">시그니처 패키지 예약 문의</a>
     </div>
@@ -295,7 +295,7 @@
         <li>✓ 프라이빗 전통 고민가 독채 1박 (1일 1팀 전용)</li>
         <li>✓ 당일 아침 갓 구운 천연효모 수제 베이커리 & 로컬 조식</li>
         <li>✓ 웰컴 로컬 티 & 계절 디저트 제공</li>
-        <li>✓ 살롱 라이브러리 및 음악 감상 공간 자유 이용</li>
+        <li>✓ 라이브러리 서가 및 음악 감상 라운지 자유 이용</li>
         <li>✓ 긴테쓰 아스카역 무료 왕복 픽업 서비스</li>
       </ul>
       <a href="#booking" class="btn btn-secondary" target="_top">심플 리트리트 예약 문의</a>

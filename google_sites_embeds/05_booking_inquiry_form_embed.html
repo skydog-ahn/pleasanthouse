@@ -53,14 +53,14 @@
     @media (max-width: 580px) {
       body {
         padding: 12px 8px;
-        word-break: keep-all;
+        word-break: keep-all; overflow-wrap: anywhere;
         overflow-wrap: break-word;
       }
       .booking-card {
         padding: 20px 14px;
         border-radius: 14px;
       }
-      .form-row { grid-template-columns: 1fr; gap: 12px; }
+      .form-row { grid-template-columns: minmax(0, 1fr); gap: 12px; }
       .field input, .field select, .field textarea {
         min-height: 48px;
         padding: 12px 14px;

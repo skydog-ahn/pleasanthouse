@@ -61,10 +61,10 @@
       .title { font-size: 26px; }
     }
     @media (max-width: 480px) {
-      .hero-banner { padding: 50px 16px 40px 16px; word-break: keep-all; overflow-wrap: break-word; }
+      .hero-banner { padding: 50px 16px 40px 16px; word-break: keep-all; overflow-wrap: anywhere; overflow-wrap: break-word; }
       .title { font-size: 22px; line-height: 1.35; }
       .desc { font-size: 13px; margin-bottom: 24px; line-height: 1.65; }
-      .chips-grid { grid-template-columns: 1fr; gap: 8px; margin-bottom: 24px; }
+      .chips-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 24px; }
       .chip { padding: 10px 12px; }
       .btn-cta { width: 100%; text-align: center; padding: 13px 20px; font-size: 14px; display: block; box-sizing: border-box; }
     }
